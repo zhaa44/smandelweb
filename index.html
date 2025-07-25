@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login SMA Negeri 8 Singkawang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Background full screen with cover */
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cef7b408-57f1-4b3d-ae02-58e19c605c0a.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      color: #516def;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      padding: 2rem 1rem 0 1rem;
+    }
+    /* The translucent container for form */
+    .login-container {
+      background: rgba(255 255 255 / 0.25);
+      backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      width: 100%;
+      max-width: 360px;
+      padding: 2.5rem 2rem 3rem 2rem;
+      box-sizing: border-box;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 0 15px rgba(0 0 0 / 0.12);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* Heading */
+    .login-container h1 {
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      color: #516def;
+      letter-spacing: 1.4px;
+    }
+    /* Input wrapper */
+    .input-group {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    /* Label styling for bold text */
+    label {
+      font-weight: 700;
+      color: #000000c9;
+      margin-bottom: 0.3rem;
+      display: block;
+      user-select: none;
+    }
+    /* Input styling */
+    input {
+      width: 100%;
+      padding: 0.55rem 1rem;
+      border: 2px solid black;
+      border-radius: 0.5rem;
+      background: rgba(255 255 255 / 0.4);
+      color: white;
+      font-size: 1.05rem;
+      outline-offset: 2px;
+      user-select: text;
+      font-weight: 500;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    input::placeholder {
+      color: #c8c8c8;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+    }
+    input:focus {
+      background: rgba(255 255 255 / 0.6);
+      color: #141414;
+      border-color: #516def;
+    }
+    /* Button for login */
+    button.login-btn {
+      background-color: #516def;
+      color: black;
+      font-weight: 700;
+      padding: 0.8rem 0;
+      border: none;
+      border-radius: 0.6rem;
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    button.login-btn:hover,
+    button.login-btn:focus {
+      background-color: #3a4ccc;
+      color: black;
+      outline-offset: 2px;
+    }
+    /* Lock icon style */
+    .lock-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+      fill: black;
+    }
+    /* Footer text */
+    .footer-text {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #b0b0b0;
+      user-select: none;
+      margin-top: -0.4rem;
+    }
+    /* Logo container */
+    .logo-container {
+      width: 140px;
+      height: auto;
+      margin-top: auto;
+      filter: drop-shadow(0 2px 3px rgba(0,0,0,0.25));
+      user-select: none;
+    }
+    /* Responsive scaling for smaller devices */
+    @media (max-width: 400px) {
+      .login-container {
+        max-width: 320px;
+        padding: 2rem 1.5rem 2.5rem 1.5rem;
+      }
+      .login-container h1 {
+        font-size: 2.5rem;
+      }
+      button.login-btn {
+        font-size: 1rem;
+      }
+      .footer-text {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="login-container" role="main" aria-label="Login form for SMA Negeri 8 Singkawang">
+    <h1>LOGIN</h1>
+    <form autocomplete="off" aria-describedby="login-instruction" onsubmit="return false;">
+      <div class="input-group">
+        <label for="name"><strong>Name</strong></label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value="Really Great Site"
+          autocomplete="name"
+          aria-required="true"
+          aria-label="Name input field"
+          />
+      </div>
+      <div class="input-group">
+        <label for="password"><strong>Password</strong></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value="**********"
+          autocomplete="current-password"
+          aria-required="true"
+          aria-label="Password input field"
+          />
+      </div>
+      <div class="input-group">
+        <label for="gmail"><strong>Gmail</strong></label>
+        <input
+          type="email"
+          id="gmail"
+          name="gmail"
+          placeholder="your@gmail.com"
+          autocomplete="email"
+          aria-required="true"
+          aria-label="Gmail input field"
+          />
+      </div>
+      <div class="input-group">
+        <label for="nohp"><strong>NO Hp</strong></label>
+        <input
+          type="tel"
+          id="nohp"
+          name="nohp"
+          placeholder="08xxx"
+          pattern="[0-9]{3,}"
+          autocomplete="tel"
+          aria-required="true"
+          aria-label="Phone number input field"
+          inputmode="tel"
+          />
+      </div>
+
+      <button class="login-btn" type="submit" aria-label="Login button, Masuk">
+        <svg class="lock-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 9V7a5 5 0 0 0-10 0v2H5a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-2Zm-8-2a3 3 0 0 1 6 0v2H9V7ZM5 11h14v7H5v-7Z"/>
+        </svg>
+        MASUK
+      </button>
+    </form>
+    <p class="footer-text" aria-label="Footer text">@SMANDELSINGKAWANG</p>
+  </main>
+
+  <figure class="logo-container" aria-label="Logo SMA Negeri 8 Singkawang 2006">
+    <img 
+      src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/38fae673-4a4f-41c4-bd13-895e94bf9a1f.png" 
+      alt="Logo SMA Negeri 8 Singkawang 2006 with yellow text and colorful emblem showing mountains, wreath, star, book with ribbon" 
+      onerror="this.style.display='none';" 
+      loading="lazy" 
+      width="280" 
+      height="280"
+      style="user-select:none;"
+    />
+  </figure>
+</body>
+</html>
+
